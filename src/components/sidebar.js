@@ -1,7 +1,8 @@
 import Logo from "./logo";
 import ShowArticle from "./show-article";
+import UserName from "./username";
 
-import '../assets/styles/sidebar.scss';
+import "../assets/styles/sidebar.scss";
 
 function Sidebar() {
 	return (
@@ -10,13 +11,17 @@ function Sidebar() {
 				<div className="sidebar-logo">
 					<Logo></Logo>
 					<span className="part">Part Software Group</span>
-                    <span className="challenge">Challenge</span>
+					<span className="challenge">Challenge</span>
 				</div>
-                <div className="show-article">
-                    <ShowArticle></ShowArticle>
-                </div>
+				<div className="show-article">
+					<ShowArticle></ShowArticle>
+				</div>
 			</div>
-			<div className="down-sidebar"></div>
+			<div className="down-sidebar">
+				<div className="username">
+					<UserName></UserName>
+				</div>
+			</div>
 		</aside>
 	);
 }

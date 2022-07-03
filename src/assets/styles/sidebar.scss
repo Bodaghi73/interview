@@ -2,6 +2,10 @@
 
 .sidebar {
     width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 34px 20px 20px;
     background-color: $background;
     border-radius: 0 65px 0 0;

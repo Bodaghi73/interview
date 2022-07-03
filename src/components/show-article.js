@@ -9,14 +9,14 @@ function ShowArticle() {
 		<div className="show-article-buttons">
 			<div className="all-articles">
 				<button className="all-articles-button">
-					<FontAwesomeIcon className="icon" icon={faInbox} />
+					<FontAwesomeIcon className="all-icon" icon={faInbox} />
 					All Articles
 				</button>
 			</div>
 			<div className="favorites-articles">
 				<button className="favorites-articles-button">
 					<div>
-						<FontAwesomeIcon className="icon" icon={faHeart} />
+						<FontAwesomeIcon className="favorites-icon" icon={faHeart} />
 						Favorites
 					</div>
 					<span className="coming-soon">Coming Soon</span>
