@@ -1,6 +1,7 @@
 import Logo from "./logo";
 import ShowArticle from "./show-article";
 import UserName from "./username";
+import Logout from "./logout";
 
 import "../assets/styles/sidebar.scss";
 
@@ -21,6 +22,9 @@ function Sidebar() {
 				<div className="username">
 					<UserName></UserName>
 				</div>
+                <div className="logout">
+                    <Logout></Logout>
+                </div>
 			</div>
 		</aside>
 	);

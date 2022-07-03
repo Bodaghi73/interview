@@ -1,0 +1,8 @@
+@import './style.scss';
+
+.exit{
+    button.logout-button{
+        @extend %button;
+        @extend %light-button;
+    }
+}
