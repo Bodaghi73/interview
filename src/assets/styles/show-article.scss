@@ -1,0 +1,39 @@
+@import './style.scss';
+
+.show-article-buttons {
+    .icon {
+        padding-right: 10px;
+    }
+
+    .all-articles {
+        margin-bottom: 12px;
+
+        button.all-articles-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @extend %button;
+            @extend %dark-button;
+        }
+    }
+
+    .favorites-articles {
+        button.favorites-articles-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @extend %button;
+            @extend %disable-button;
+
+            span.coming-soon {
+                padding: 6px 10px;
+                background-color: $gray-color;
+                color: $light-color;
+                font-size: 12px;
+                border-radius: 15px;
+            }
+        }
+
+    }
+
+}

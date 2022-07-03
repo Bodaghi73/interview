@@ -1,0 +1,30 @@
+@import './style.scss';
+
+.sidebar {
+    width: 20%;
+    padding: 34px 20px 20px;
+    background-color: $background;
+    border-radius: 0 65px 0 0;
+
+    .top-sidebar {
+        .sidebar-logo {
+            display: flex;
+            flex-direction: column;
+
+            span.part {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            span.challenge {
+                font-size: 14px;
+                font-weight: 500;
+                opacity: 0.4;
+            }
+        }
+
+        .show-article {
+            margin-top: 65px;
+        }
+    }
+}

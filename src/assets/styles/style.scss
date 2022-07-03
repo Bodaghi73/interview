@@ -1,0 +1,32 @@
+* {
+    font-family: 'Roboto';
+}
+
+//variable
+$background:#eeeeee;
+$light-color:white;
+$dark-color:black;
+$dark-background-color-button:#3f51b5;
+$disable-color:#d5d5d5;
+$gray-color:#afafaf;
+
+%button {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+%dark-button {
+    padding: 20px;
+    color: $light-color;
+    background-color: $dark-background-color-button;
+}
+
+%disable-button {
+    padding: 20px;
+    color: rgba($color: $dark-color, $alpha: 0.4);
+    background-color: $disable-color;
+}
