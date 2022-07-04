@@ -1,0 +1,24 @@
+@import "./style.scss";
+
+.table-articles {
+    width: 80%;
+    padding: 50px 70px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .add-article {
+            button.add-article-button {
+                @extend %button;
+                @extend %dark-button;
+                border-radius: 30px;
+
+                .add-icon {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+    }
+}
