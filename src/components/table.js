@@ -55,6 +55,42 @@ function Table() {
 						<FontAwesomeIcon className="edit-icon" icon={faPen} />
 					</td>
 				</tr>
+				<tr>
+					<td>3</td>
+					<td>Article Title</td>
+					<td>
+						<FontAwesomeIcon className="author-icon" icon={faCircle} />
+						@author_user
+					</td>
+					<td>
+						<span className="tag-name">tag name one</span>
+						<span className="counter">+3</span>
+					</td>
+					<td>part of article body followed by ellipsis...</td>
+					<td>Sep 6, 2021</td>
+					<td>
+						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
+						<FontAwesomeIcon className="edit-icon" icon={faPen} />
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Article Title</td>
+					<td>
+						<FontAwesomeIcon className="author-icon" icon={faCircle} />
+						@author_user
+					</td>
+					<td>
+						<span className="tag-name">tag name one</span>
+						<span className="counter">+3</span>
+					</td>
+					<td>part of article body followed by ellipsis...</td>
+					<td>Sep 6, 2021</td>
+					<td>
+						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
+						<FontAwesomeIcon className="edit-icon" icon={faPen} />
+					</td>
+				</tr>
 			</tbody>
 		</table>
 	);

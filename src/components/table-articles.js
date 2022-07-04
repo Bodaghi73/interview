@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 import Table from "./table";
+import Pagination from "./pagination";
 
 import "../assets/styles/table-articles.scss";
 
@@ -22,7 +23,9 @@ function TableArticles() {
 			<div className="table">
 				<Table></Table>
 			</div>
-			<div className="pagination"></div>
+			<div className="pagination">
+				<Pagination></Pagination>
+			</div>
 		</div>
 	);
 }

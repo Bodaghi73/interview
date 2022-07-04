@@ -1,0 +1,32 @@
+@import "./style.scss";
+
+.pagination-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .previous, .next{
+        button.previous-button,.next-button{
+            @extend %button;
+            background-color: $light-color;
+        }
+    }
+
+    .number-buttons{
+        button.number{
+            padding: 20px 25px 20px;
+            margin: 0 5px 0;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 50%;
+            background-color: $background;
+            border: 1px solid $light-blue-color;
+            outline: none;
+            cursor: pointer;
+        }
+        button.active{
+            color: $light-color;
+            background-color: $dark-blue-color;
+            border: none;
+        }
+    }
+}
