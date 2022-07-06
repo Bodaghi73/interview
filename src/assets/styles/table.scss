@@ -66,6 +66,7 @@ table.articles {
                     color: $dark-red-color;
                     background-color: $light-red-color;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
 
                 .edit-icon {
@@ -73,6 +74,7 @@ table.articles {
                     background-color: $blue-color;
                     padding: 12px;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
             }
         }
