@@ -4,7 +4,7 @@ import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 
 import "../assets/styles/table.scss";
 
-function Table() {
+function Table(props) {
 	return (
 		<table className="articles">
 			<thead>
@@ -19,78 +19,29 @@ function Table() {
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Article Title</td>
-					<td>
-						<FontAwesomeIcon className="author-icon" icon={faCircle} />
-						@author_user
-					</td>
-					<td>
-						<span className="tag-name">tag name one</span>
-						<span className="counter">+3</span>
-					</td>
-					<td>part of article body followed by ellipsis...</td>
-					<td>Sep 6, 2021</td>
-					<td>
-						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
-						<FontAwesomeIcon className="edit-icon" icon={faPen} />
-					</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Article Title</td>
-					<td>
-						<FontAwesomeIcon className="author-icon" icon={faCircle} />
-						@author_user
-					</td>
-					<td>
-						<span className="tag-name">tag name one</span>
-						<span className="counter">+3</span>
-					</td>
-					<td>part of article body followed by ellipsis...</td>
-					<td>Sep 6, 2021</td>
-					<td>
-						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
-						<FontAwesomeIcon className="edit-icon" icon={faPen} />
-					</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Article Title</td>
-					<td>
-						<FontAwesomeIcon className="author-icon" icon={faCircle} />
-						@author_user
-					</td>
-					<td>
-						<span className="tag-name">tag name one</span>
-						<span className="counter">+3</span>
-					</td>
-					<td>part of article body followed by ellipsis...</td>
-					<td>Sep 6, 2021</td>
-					<td>
-						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
-						<FontAwesomeIcon className="edit-icon" icon={faPen} />
-					</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>Article Title</td>
-					<td>
-						<FontAwesomeIcon className="author-icon" icon={faCircle} />
-						@author_user
-					</td>
-					<td>
-						<span className="tag-name">tag name one</span>
-						<span className="counter">+3</span>
-					</td>
-					<td>part of article body followed by ellipsis...</td>
-					<td>Sep 6, 2021</td>
-					<td>
-						<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
-						<FontAwesomeIcon className="edit-icon" icon={faPen} />
-					</td>
-				</tr>
+				{/* console.log(props); */}
+				{props.list.map((item, index) => {
+					return (
+						<tr key={item.slug}>
+							<td>{index + 1}</td>
+							<td>{item.title}</td>
+							<td className="author">
+								<FontAwesomeIcon className="author-icon" icon={faCircle} />
+								{item.author.username}
+							</td>
+							<td>
+								<span className="tag-name">{item.tagList}</span>
+								<span className="counter">+3</span>
+							</td>
+							<td>part of article body followed by ellipsis...</td>
+							<td>{item.createdAt}</td>
+							<td className="options">
+								<FontAwesomeIcon className="delete-icon" icon={faTrashCan} />
+								<FontAwesomeIcon className="edit-icon" icon={faPen} />
+							</td>
+						</tr>
+					);
+				})}
 			</tbody>
 		</table>
 	);
