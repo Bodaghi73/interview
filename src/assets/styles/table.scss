@@ -1,0 +1,86 @@
+@import "./style.scss";
+
+table.articles {
+    width: 100%;
+    border-spacing: 0 15px;
+
+    thead {
+        tr {
+            background-color: $blue-color;
+
+            th {
+                text-align: left;
+                padding: 20px;
+
+                &:first-child {
+                    border-radius: 10px 0 0 10px;
+                }
+
+                &:last-child {
+                    border-radius: 0 10px 10px 0;
+                }
+
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            background-color: $background;
+
+            td {
+                padding: 15px;
+
+                &:first-child {
+                    border-radius: 10px 0 0 10px;
+                }
+
+                &:last-child {
+                    border-radius: 0 10px 10px 0;
+                }
+
+
+                .author-icon {
+                    color: purple;
+                    padding-right: 10px;
+                }
+
+                .tag-name {
+                    padding: 6px 12px;
+                    margin-right: 5px;
+                    color: $light-color;
+                    background-color: $tag-name-color1;
+                    border-radius: 15px;
+                }
+
+                .counter {
+                    padding: 6px 12px;
+                    color: $light-color;
+                    background-color: $dark-color;
+                    border-radius: 15px;
+                }
+
+                .delete-icon {
+                    padding: 12px;
+                    margin-right: 5px;
+                    color: $dark-red-color;
+                    background-color: $light-red-color;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                .edit-icon {
+                    color: $dark-blue-color;
+                    background-color: $blue-color;
+                    padding: 12px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            td.author,.options {
+                width: 10%;
+            }
+        }
+    }
+}

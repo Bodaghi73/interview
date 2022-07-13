@@ -1,0 +1,32 @@
+@import './style.scss';
+
+.user-active {
+    display: flex;
+    align-items: center;
+    background-color: $light-blue-color;
+    padding: 20px;
+    border-radius: 12px;
+
+    .user-profile {
+        opacity: 0.3;
+        .profile-icon{
+            width: 65px;
+            height: 65px;
+            padding-right: 10px;
+        }
+    }
+
+    .user-information {
+        display: flex;
+        flex-direction: column;
+
+        span.name{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        span.email{
+            font-size: 13px;
+            opacity: 0.4;
+        }
+    }
+}
